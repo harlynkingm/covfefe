@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Couture";
+  font-style: normal;
+  src: url("fonts/couture-bld.otf") format("opentype");
+}
+
+@font-face{
+  font-family: "Couture";
+  font-style: italic;
+  src: url("fonts/couture-bldit.otf") format("opentype");
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Couture";
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 1.1px;
+}
+
+.top {
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  margin-top: 30vh;
+  width: 70%;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 5px;;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3vw;
+  opacity: 0.5;
+}
+
+.section {
+  margin-top: 30vh;
+}
+
+.extra {
+  letter-spacing: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.huge {
+  font-size: 120px;
+}
+
+.right {
+  text-align: right;
+}
+
+.orange {
+  color: #ECA943;
+}
+
+@media (max-width: 850px) {
+  .top img {
+    width: 100%;
+  }
+  
+  .huge {
+    font-size: 10vw;
+  }
+}
