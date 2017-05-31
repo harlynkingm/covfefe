@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5 {
 
 .down-arrow {
   position: absolute;
-  bottom: 5px;;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   width: 3vw;
@@ -65,6 +65,11 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 850px) {
   .logo {
     width: 100%;
+  }
+  
+  .down-arrow {
+    bottom: 30px;
+    width: 9vw;
   }
   
   .huge {
