@@ -425,13 +425,411 @@
   })();
   /*]]>*/
   </script>
+  <script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'covfefeme.myshopify.com',
+      apiKey: '1aede89400c8d91632a8806c2be7909e',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [10637053318],
+        node: document.getElementById('product-component-3a4709dbb0b'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "checkout",
+    "variantId": "all",
+    "width": "200%",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "BUY NOW"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#ffffff",
+        "color": "#000000",
+        "font-family": "Montserrat, sans-serif",
+        ":hover": {
+          "background-color": "#e6e6e6",
+          "color": "#000000"
+        },
+        "border-radius": "0px",
+        ":focus": {
+          "background-color": "#e6e6e6"
+        },
+        "font-weight": "bold"
+      },
+      "title": {
+        "font-family": "Montserrat, sans-serif",
+        "color": "#ffffff"
+      },
+      "price": {
+        "color": "#ffffff"
+      },
+      "compareAt": {
+        "font-size": "12px",
+        "color": "#ffffff"
+      }
+    },
+    "googleFonts": [
+      "Montserrat",
+      "Montserrat"
+    ]
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#ffffff",
+        "color": "#000000",
+        "font-family": "Montserrat, sans-serif",
+        ":hover": {
+          "background-color": "#e6e6e6",
+          "color": "#000000"
+        },
+        "border-radius": "0px",
+        ":focus": {
+          "background-color": "#e6e6e6"
+        },
+        "font-weight": "bold"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    },
+    "googleFonts": [
+      "Montserrat"
+    ]
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#ffffff",
+        "color": "#000000",
+        "font-family": "Montserrat, sans-serif",
+        ":hover": {
+          "background-color": "#e6e6e6",
+          "color": "#000000"
+        },
+        "border-radius": "0px",
+        ":focus": {
+          "background-color": "#e6e6e6"
+        },
+        "font-weight": "bold"
+      },
+      "title": {
+        "font-family": "Montserrat, sans-serif"
+      }
+    },
+    "googleFonts": [
+      "Montserrat",
+      "Montserrat"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Montserrat, sans-serif",
+        "background-color": "#ffffff",
+        ":hover": {
+          "background-color": "#e6e6e6"
+        },
+        ":focus": {
+          "background-color": "#e6e6e6"
+        },
+        "font-weight": "bold"
+      },
+      "count": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "iconPath": {
+        "fill": "#000000"
+      }
+    },
+    "googleFonts": [
+      "Montserrat"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+  <script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'covfefeme.myshopify.com',
+      apiKey: '1aede89400c8d91632a8806c2be7909e',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [10637163014],
+        node: document.getElementById('product-component-281b4228e7b'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "checkout",
+    "variantId": "all",
+    "width": "200%",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "BUY NOW"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#ffffff",
+        "color": "#000000",
+        "font-family": "Montserrat, sans-serif",
+        ":hover": {
+          "background-color": "#e6e6e6",
+          "color": "#000000"
+        },
+        "border-radius": "0px",
+        ":focus": {
+          "background-color": "#e6e6e6"
+        },
+        "font-weight": "bold"
+      },
+      "title": {
+        "font-family": "Montserrat, sans-serif",
+        "color": "#ffffff"
+      },
+      "price": {
+        "color": "#ffffff"
+      },
+      "compareAt": {
+        "font-size": "12px",
+        "color": "#ffffff"
+      }
+    },
+    "googleFonts": [
+      "Montserrat",
+      "Montserrat"
+    ]
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#ffffff",
+        "color": "#000000",
+        "font-family": "Montserrat, sans-serif",
+        ":hover": {
+          "background-color": "#e6e6e6",
+          "color": "#000000"
+        },
+        "border-radius": "0px",
+        ":focus": {
+          "background-color": "#e6e6e6"
+        },
+        "font-weight": "bold"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    },
+    "googleFonts": [
+      "Montserrat"
+    ]
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#ffffff",
+        "color": "#000000",
+        "font-family": "Montserrat, sans-serif",
+        ":hover": {
+          "background-color": "#e6e6e6",
+          "color": "#000000"
+        },
+        "border-radius": "0px",
+        ":focus": {
+          "background-color": "#e6e6e6"
+        },
+        "font-weight": "bold"
+      },
+      "title": {
+        "font-family": "Montserrat, sans-serif"
+      }
+    },
+    "googleFonts": [
+      "Montserrat",
+      "Montserrat"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Montserrat, sans-serif",
+        "background-color": "#ffffff",
+        ":hover": {
+          "background-color": "#e6e6e6"
+        },
+        ":focus": {
+          "background-color": "#e6e6e6"
+        },
+        "font-weight": "bold"
+      },
+      "count": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "iconPath": {
+        "fill": "#000000"
+      }
+    },
+    "googleFonts": [
+      "Montserrat"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
 
 </head>
 <body>
   
   <div class="container">
     <div class="top center">
-      <a href="https://twitter.com/realDonaldTrump/status/869766994899468288" target="_blank"><img src="images/logo.png" class="logo"></a>
+      <a href="https://twitter.com/realDonaldTrump/status/869858333477523458?s=01" target="_blank"><img src="images/logo.png" class="logo"></a>
       <h5 class="extra">The New Fragrance From Donald's Rump</h5>
       <img src="images/down-arrow.png" class="down-arrow">
     </div>
@@ -472,18 +870,12 @@
     </div>
     
     <div class="section line-top center">
-      <h4 style="margin-bottom:80px;margin-top:80px;">
+      <h4 style="margin-top:80px;">
         Unlike our President, make a difference.<br />
         Help stop childhood illiteracy today.
       </h4>
-      <a href="https://worldliteracyfoundation.org/donate/" target="_blank">
-        <h4 class="donate-button">Donate Now</h4>
-      </a>
-    </div>
-    
-    <div class="section">
-      <h4 style="margin-bottom:1px">Support our cause. <span class="orange">wear Covfefe.</span></h4>
-      <p>Profits support the World Literacy Foundation. Ships within 2 weeks.</p>
+      <h1 style="margin-bottom:20px" class="orange">Wear Covfefe.</h1>
+      <p>Profits support the World Literacy Foundation. Ships within 2 weeks.<br />All donations made in the name of Donald J. Trump</p>
       <div class="row">
         <div class="six columns">
           <div id='product-component-c4893a13c02'></div>
@@ -492,9 +884,20 @@
           <div id='product-component-1855c44115d'></div>
         </div>
       </div>
+      <div class="row">
+        <div class="six columns">
+          <div id='product-component-3a4709dbb0b'></div>
+        </div>
+        <div class="six columns">
+          <div id='product-component-281b4228e7b'></div>
+        </div>
+      </div>
     </div>
     
     <div class="section"></div>
+  </div>
+  <div class="footer center">
+    <p>All Rights Reserved 2017</p>
   </div>
 
 </body>
